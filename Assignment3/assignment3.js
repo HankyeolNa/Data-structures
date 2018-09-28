@@ -62,7 +62,7 @@ async.eachSeries(addresses, function(value, callback) {
     });
     setTimeout(callback, 3000);
 }, function() {
-    fs.writeFileSync('Assignment3.json', JSON.stringify(meetingsData));
+    fs.writeFileSync('assignment3.json', JSON.stringify(meetingsData));
     console.log('*** *** *** *** ***');
     console.log('Number of meetings in this zone: ');
     console.log(meetingsData.length);
