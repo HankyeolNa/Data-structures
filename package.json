@@ -5,6 +5,7 @@
   "main": "assign2.js",
   "dependencies": {
     "async": "^2.6.1",
+    "pg": "^7.5.0",
     "request": "^2.88.0"
   },
   "devDependencies": {},
