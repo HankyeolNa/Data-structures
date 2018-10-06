@@ -16,7 +16,10 @@ client.connect();
 
 
 var addressesForDb = []
-var content = fs.readFileSync('../Assignment3/assignment3.json');
+var content = fs.readFileSync('/Assignment3/assignment3.json');
+//우선 저희가 과제3때 결과물들을 확인하기위해서 콘텐트 변수에 담았어요
+console.log(content)
+/*
 var parsedJSON = JSON.parse(content);
 
 for (var i = 0; i < 4; i++) {
@@ -26,6 +29,7 @@ for (var i = 0; i < 4; i++) {
     real.latLong = { lat: parsedJSON[i].OutputGeocodes[0].OutputGeocode.Latitude, lng: parsedJSON[i].OutputGeocodes[0].OutputGeocode.Latitude }
     addressesForDb[i] = real;
 }
+*/
 
 var thisQuery;
 
@@ -52,13 +56,13 @@ async.eachSeries(addressesForDb, function(value, callback) {
 */
 
 
-
+/*
 thisQuery = "SELECT * FROM aalocations;";
 client.query(thisQuery, (err, res) => {
     console.log(err, res);
     client.end();
 });
-
+*/
 
 
 /*
